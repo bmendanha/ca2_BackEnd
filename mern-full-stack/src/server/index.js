@@ -13,8 +13,9 @@ server.use(express.static('dist'));
 // the URL to the DB will be loaded from an env variable or using the MongoDB Clour
 const dbroute =
   process.env.MONGODB_URL ||
-  'mongodb+srv://erika:dorset@users-bm6td.mongodb.net/test?retryWrites=true&w=majority';
-// mongodb+srv://admin:admin@cluster0.whiyc.mongodb.net/<dbname>?retryWrites=true&w=majority
+  // 'mongodb+srv://erika:dorset@users-bm6td.mongodb.net/test?retryWrites=true&w=majority';
+  'mongodb+srv://admin:admin@cluster0.whiyc.mongodb.net/faulkner?retryWrites=true&w=majority';
+ 
 let db;
 
 // connect to the DB and then start the expres server

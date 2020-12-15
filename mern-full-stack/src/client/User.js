@@ -18,11 +18,11 @@ class User extends React.Component {
             <div className="media">
               <div className="media-content">
                 <p className="title is-4 has-text-primary">
-                  {this.props.first}
+                  {this.props.technique}
                 </p>
                 <hr />
-                <p className="subtitle is-size-6">{this.props.quote}</p>
-                { /* delete the prop with requested id from the function invoked in the parent component*/}
+                <p className="subtitle is-size-6">{this.props.category}</p>
+                {/* delete the prop with requested id from the function invoked in the parent component*/}
                 <button
                   className="button is-danger"
                   type="button"

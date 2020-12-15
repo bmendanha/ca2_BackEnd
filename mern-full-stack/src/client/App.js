@@ -1,6 +1,6 @@
 import React from 'react';
 import { HashRouter, Route } from 'react-router-dom';
-//import required components
+// import required components
 import CreateUser from './CreateUser';
 import EditUser from './EditUser';
 import UserList from './UserList';
@@ -10,11 +10,11 @@ const App = () => {
   return(
     <HashRouter>
       <div>
-        {/*SERVERSIDE: Link the routes to components*/}
+        {/* SERVERSIDE: Link the routes to components */}
         <Route exact path="/" component={UserList}/>
-        {/*pass the id through the EditUser component*/}
+        {/* pass the id through the EditUser component */}
         <Route path="/edit-user/:id" component={EditUser}/>
-        {/*set the path to create a new user to CreateUser component*/}
+        {/* set the path to create a new user to CreateUser component */}
         <Route path="/create-user" component={CreateUser}/>
       </div>
     </HashRouter>

@@ -67,7 +67,7 @@ class UserList extends Component {
       <User
         key={u._id}
         id={u._id}
-        fname={u.fname}
+        technique={u.fname}
         image={u.picture}
         category={u.category}
         /*
@@ -100,7 +100,7 @@ class UserList extends Component {
           {/* when this button is pressed, CreateUser component will be rendered by using React Router*/}
           <Link to={'/create-user'} className="navbar-item navbar-end">
             <button className="button is-dark" type="button">
-              Create new user
+              Create new Techniques
             </button>
           </Link>
         </nav>
