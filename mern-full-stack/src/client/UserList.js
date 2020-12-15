@@ -67,7 +67,7 @@ class UserList extends Component {
       <User
         key={u._id}
         id={u._id}
-        technique={u.fname}
+        technique={u.technique}
         image={u.picture}
         category={u.category}
         /*

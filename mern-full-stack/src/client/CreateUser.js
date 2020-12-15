@@ -55,47 +55,44 @@ class CreateUser extends Component {
           <hr />
           {/* main container for input fields */}
           <div className="container">
-            {/* FIRST COLUMN */}
-            <div className="columns">
-              <div className="column is-half">
-                <div className="field">
-                  <label className="label"> Technique: </label>
-                  <div className="control">
-                    <input
-                      className="input is-small"
-                      type="text"
-                      name="title"
-                      value={this.state.technique}
-                      onChange={this.handleChange}
-                      id="form"
-                    />
-                  </div>
+            <div className="column is-half">
+              <div className="field">
+                <label className="label">Category: </label>
+                <div className="control">
+                  <input
+                    className="input is-small"
+                    type="text"
+                    name="technique"
+                    value={this.state.technique}
+                    onChange={this.handleChange}
+                    id="form"
+                  />
                 </div>
-                <div className="field">
-                  <label className="label"> Picture: </label>
-                  <div className="control">
-                    <input
-                      className="input is-small"
-                      type="text"
-                      name="picture"
-                      value={this.state.picture}
-                      onChange={this.handleChange}
-                      id="form"
-                    />
-                  </div>
+              </div>
+              <div className="field">
+                <label className="label"> Picture: </label>
+                <div className="control">
+                  <input
+                    className="input is-small"
+                    type="text"
+                    name="picture"
+                    value={this.state.picture}
+                    onChange={this.handleChange}
+                    id="form"
+                  />
                 </div>
-                <div className="field">
-                  <label className="label"> Category: </label>
-                  <div className="control">
-                    <input
-                      className="input is-small"
-                      type="text"
-                      name="picture"
-                      value={this.state.category}
-                      onChange={this.handleChange}
-                      id="form"
-                    />
-                  </div>
+              </div>
+              <div className="field">
+                <label className="label"> Technique: </label>
+                <div className="control">
+                  <input
+                    className="input is-small"
+                    type="text"
+                    name="category"
+                    value={this.state.category}
+                    onChange={this.handleChange}
+                    id="form"
+                  />
                 </div>
               </div>
             </div>
